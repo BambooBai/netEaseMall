@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>网易严选</title>
+</head>
+<body>
+<script>
+    ;(function anonymous(window) {
+        function computed() {
+            let winW = document.documentElement.clientWidth,
+                desW = 1000;
+            winW >= desW ? document.documentElement.style.fontSize = '100px' : document.documentElement.style.fontSize = (winW / desW) * 100 + 'px';
+        };
+        computed();
+
+        window.addEventListener('resize', computed);
+    })(window);
+</script>
+<div id="root"></div>
+</body>
+</html>
